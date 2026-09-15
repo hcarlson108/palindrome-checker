@@ -5,14 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>palindrome-checker</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Palindrome Checker</h1>
-    <div id="input-card">
-      <input id="wordInput" type="text" placeholder="word" />
-      <button id="checkBtn">Check</button>
-    </div>
-    <div><p id="message">hello</p></div>
+    <main>
+      <div id="checker-card">
+        <h1>Palindrome Checker</h1>
+        <div id="input-card">
+          <input id="wordInput" type="text" placeholder="word" />
+          <div>
+            <button id="checkBtn">Check</button>
+            <button id="clearBtn" hidden>Clear</button>
+          </div>
+        </div>
+        <div><p id="message"></p></div>
+      </div>
+    </main>
+    <section id="about">
+      <h2>What is a palindrome?</h2>
+      <p>
+        A palindrome is a word, phrase, or number that reads the same forwards
+        and backwards, ignoring spaces, punctuation, and capitalization. Use
+        tool above to check if a word is a palindrome!
+      </p>
+      <div id="examples-row">
+        <table class="examples">
+          <tr>
+            <td>racecar</td>
+            <td>level</td>
+            <td>kayak</td>
+          </tr>
+          <tr>
+            <td>madam</td>
+            <td>noon</td>
+            <td>rotor</td>
+          </tr>
+          <tr>
+            <td>civic</td>
+            <td>deified</td>
+            <td>refer</td>
+          </tr>
+          <tr>
+            <td>solos</td>
+            <td>stats</td>
+            <td>tenet</td>
+          </tr>
+          <tr>
+            <td>121</td>
+            <td>12321</td>
+            <td>1001</td>
+          </tr>
+        </table>
+        <table class="examples">
+          <tr>
+            <td>A man, a plan, a canal: Panama</td>
+          </tr>
+          <tr>
+            <td>Was it a car or a cat I saw?</td>
+          </tr>
+          <tr>
+            <td>Never odd or even</td>
+          </tr>
+          <tr>
+            <td>No lemon, no melon</td>
+          </tr>
+          <tr>
+            <td>Do geese see God?</td>
+          </tr>
+          <tr>
+            <td>Madam, in Eden, I'm Adam</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Website by
+        <a href="https://github.com/hcarlson108" target="_blank" rel="noopener"
+          >hcarlson108</a
+        ><br />&copy; 2026 All rights reserved.
+      </p>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
